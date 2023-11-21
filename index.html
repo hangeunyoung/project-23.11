@@ -5,15 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>웹퍼블리셔 한근영의 포트폴리오</title>
-    <link href="https://fonts.googleapis.com/css2?family=Diphylleia&family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Diphylleia&family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/default.css">
     <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width:767px)">
     <link rel="stylesheet" href="css/pc.css" media="screen and (min-width:768px)">
 </head>
 
 <body>
-    <div class="container">
-        <header>
+    <div class="bg-box">
+        <header class="container">
             <h1><a href="#">Han GeunYoung</a></h1>
             <ul class="icons">
                 <li><a href="#"><img src="images/mdi_github.svg" alt="github"></a></li>
@@ -21,17 +23,107 @@
                 <li><a href="#"><img src="images/uiw_linkedin.svg" alt="jobkorea"></a></li>
             </ul>
         </header>
-        <section id="title">
+        <section id="title" class="container">
             <div class="title-box">
                 <h2>Nice to meet you!<br>
                     I'm <span class="accent-line">Han GeunYoung</span></h2>
                 <!-- 자기소개 2~3줄 -->
                 <p>저는 경기도 일산에 사는 웹 퍼블리셔 지망생입니다.<br>
-                    웹디장인과 프론트엔드에 열정을 가지고 미래를 끔꾸며 성장하고 싶습니다.</p>
-                <a href="mailto:hkd" class="btn-email btn">contact me</a>
+                    웹디자인과 프런트엔드에 열정을 가지고 미래를 꿈꾸며 성장하고 싶습니다.</p>
+                <a href="#projects" class="btn-email btn">포르폴리오</a>
             </div>
         </section>
     </div>
+    <section id="skills" class="container">
+        <h2 class="blind">skills</h2>
+        <ul class="skill-list">
+            <li>
+                <h3>HTML</h3>
+                <P>구성 요소들의 의미와 사용 방식을 해석 및 판단하여 그에 맞도록 문서를 구조화하여 작성 가능합니다.</P>
+            </li>
+            <li>
+                <h3>CSS</h3>
+                <P>마크업 된 문서의 디자인과 레이아웃을 만들고 인터랙티브한 홈페이지 제작을 할 수 있습니다.</P>
+            </li>
+            <li>
+                <h3>Javascript</h3>
+                <P>사용자와 상호작용하는 UI 구현 및 서버 API를 활용할 수 있습니다.</P>
+            </li>
+            <li>
+                <h3>Accessibility</h3>
+                <P>웹 접근성을 준수하고 다양한 사용자들이 정보를 잘 이용할 수 있도록 마크업 할 수 있습니다.</P>
+            </li>
+            <li>
+                <h3>React</h3>
+                <P>컴포넌트 기반의 UI 프레임워크에 대한 활용과 스터디를 꾸준히 하고 있습니다.</P>
+            </li>
+            <li>
+                <h3>SASS</h3>
+                <P>css를 능숙하게 다루고 협업능력과 생산성을 향상시킬 수 있습니다.</P>
+            </li>
+        </ul>
+    </section>
+    <section id="projects" class="container">
+        <div class="title-group">
+            <h2>포트폴리오</h2>
+            <a href="mailto:hms09131@naver.com" class="btn">contact me</a>
+        </div>
+        <ul class="item-list">
+            <li>
+                <!-- 썸네일화면 크기 2배로 잡아서 고화질로 사용 -->
+                <a href="#">
+                    <img src="images/work01.webp" alt="작품1">
+                    <h3>logo design</h3>
+                    <div class="skills">
+                        <span>figma</span>
+                        <span>photoshop</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/work02.webp" alt="작품2">
+                    <h3>브랜딩 혼페이지</h3>
+                    <div class="skills">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>SASS</span>
+                        <span>Javascript</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/work03.webp" alt="작품3">
+                    <h3>logo design</h3>
+                    <div class="skills">
+                        <span>figma</span>
+                        <span>photoshop</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/work04.webp" alt="작품4">
+                    <h3>logo design</h3>
+                    <div class="skills">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Javascript</span>
+                        <span>React</span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </section>
+    <footer class="container">
+        <h1><a href="#">Han GeunYoung</a></h1>
+        <ul class="icons">
+            <li><a href="#"><img src="images/mdi_github.svg" alt="github"></a></li>
+            <li><a href="#"><img src="images/cib_blogger.svg" alt="blog"></a></li>
+            <li><a href="#"><img src="images/uiw_linkedin.svg" alt="jobkorea"></a></li>
+        </ul>
+    </footer>
 </body>
 
 </html>
