@@ -1,0 +1,150 @@
+body {
+    background-color: var(--bg-color1);
+    color: var(--text-color);
+}
+
+a {
+    color: var(--text-color);
+}
+
+.blind {
+    /* section이나 article에는 제목이 필수이나 디자인 적으로 생략이 가능 */
+    display: none;
+}
+
+.bg-box {
+    /* background-image: url(../images/profile.jpg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: contain;
+    background-size: 550px; */
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header, footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    /* outline: 1px solid red; */
+}
+
+header h1, footer h1 {
+    font-size: 22px;
+}
+
+header .icons, footer .icons {
+    display: flex;
+}
+
+header .icons li,footer .icons li {
+    padding-left: 1.5em;
+}
+
+header .icons li:first-child img, footer .icons li:first-child img {
+    width: 36px;
+    height: 36px;
+    display: block;
+}
+
+#title {
+    height: calc(100vh - 100px);
+    /* outline: 1px solid pink; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#title h2 {
+    font-size: 62px;
+    /* font-size: 4.3vw; */
+    margin-bottom: 50px;
+}
+
+#title h2 .accent-line {
+    border-bottom: 4px solid var(--main-color);
+}
+
+#title p {
+    color: var(--text-color2);
+    margin-bottom: 60px;
+}
+
+#skills {
+    padding: 80px 0 80px 20px;
+}
+
+#skills h3 {
+    font-size: 34px;
+}
+
+#skills p {
+    font-size: 16px;
+    padding-top: 20px;
+    color: var(--text-color2);
+}
+
+#skills .skill-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#skills .skill-list li {
+    width: calc(100% / 3);
+    padding-bottom: 70px;
+    padding-right: 40px;
+}
+
+#projects .title-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+.title-group h2 {
+    font-size: 62px;
+}
+
+#projects .item-list {
+    display: flex;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    gap: 70px 20px;
+    margin-bottom: 120px;
+}
+
+#projects .item-list li {
+    width: calc(50% - 10px);
+    /* box-shadow: 0 0 0 1px #343435; */
+}
+
+#projects .item-list img {
+    width: 100%;
+    /* 이미지 비율 지정: 가로/세로 */
+    /* aspect-ratio: 4/3; */
+}
+#projects .item-list h3 {
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-top: 1em;
+    margin-bottom: 0.7em;
+}
+#projects .item-list li .skills {
+    font-size: 14px;
+    color: var(--text-color2);
+}
+#projects .item-list li .skills span {
+    margin-right: 1em;
+}
+footer {
+    border-top: 2px solid rgba(255, 255, 255, 0.3);
+}
+

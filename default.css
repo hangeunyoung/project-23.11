@@ -1,0 +1,40 @@
+:root {
+    --bg-color1: #151515;
+    --bg-color2: #242424;
+    --main-color: #65d3a4;
+    --text-color: #fff;
+    --text-color2: #ccc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 18px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    line-height: 2;
+}
+
+.btn {
+    display: inline-block;
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--main-color);
+    padding: 5px 0;
+}
